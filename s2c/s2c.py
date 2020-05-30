@@ -142,7 +142,7 @@ def main():
     calservice = build('calendar', 'v3', credentials=creds)
 
     # Call the Sheets API
-    sheet = sheetservice.spreadsheets()
+    sheet = sheetservice.spreadsheets() # pylint: disable=no-member
     result = sheet.values().get(spreadsheetId=SPREADSHEET_ID,
                                 range=RANGE_NAME).execute()
     # Get the raw data from the sheet
