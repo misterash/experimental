@@ -18,7 +18,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly',
 # and the person to create shifts for.
 CALENDAR_ID = 'il5tc4f32rv6tt6v5fh5hsbc14@group.calendar.google.com'
 SPREADSHEET_ID = '16LG3K0OLyI-ub90V8t6Ept_FEq18B5LANofx9Or308Q'
-RANGE_NAME = 'Sheet1!A1:I48'
+RANGE_NAME = 'April2020!A1:I40'
 PERSON = 'Perkis'
 
 class Shift:
@@ -58,7 +58,7 @@ def make_shifts(rawdata):
     for rowlist in rawdata:
         if rowlist[0] == current_month:
             current_date_index = 0
-        if rowlist[0] == '.':
+        if rowlist[0] == '':
             current_date_index = rawdata.index(rowlist)
         if person in rowlist:
             person_indexes = get_index_positions(rowlist, person)
