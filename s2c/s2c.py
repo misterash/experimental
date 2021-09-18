@@ -16,16 +16,16 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly',
 
 # Set the IDs of the Calendar and Sheet, the range of the Sheet,
 # and the person to create shifts for.
-CALENDAR_ID = 'il5tc4f32rv6tt6v5fh5hsbc14@group.calendar.google.com'
-SPREADSHEET_ID = '16LG3K0OLyI-ub90V8t6Ept_FEq18B5LANofx9Or308Q'
-RANGE_NAME = 'April2020!A1:I40'
-PERSON = 'Perkis'
+CALENDAR_ID = ''
+SPREADSHEET_ID = ''
+RANGE_NAME = ''
+PERSON = ''
 
 class Shift:
     """Shift class represents a working shift."""
 
     def __init__(self):
-        self.year = '2020'
+        self.year = ''
         self.title = ''
         self.time = ''
         self.datenum = ''
